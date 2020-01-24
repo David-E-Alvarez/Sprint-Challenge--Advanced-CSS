@@ -160,6 +160,39 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.container {
+  border: 2px solid red;
+}
+.container .intro {
+  border: 2px solid purple;
+}
+.container .intro .image img {
+  border-radius: 20px;
+}
+.navigation {
+  margin-top: 10px;
+  width: 100%;
+  border: 2px red solid;
+  display: inline-block;
+  background-color: lightgrey;
+}
+.navigation h1 {
+  text-align: center;
+  border: 2px black solid;
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+.navigation nav {
+  width: 100%;
+  text-align: center;
+  border: 2px black solid;
+}
+.navigation nav a {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2rem;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
