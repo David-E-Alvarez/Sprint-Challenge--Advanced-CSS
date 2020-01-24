@@ -3,7 +3,12 @@
 .home {
 
   .intro {
-
+    /*border: 2px black solid;*/
+    .image{
+      img{
+        width: 100%;
+      }
+    }
     h2 {
       padding: 15px;
     }
@@ -58,6 +63,19 @@
       }
 
       .btn {
+          display: block;
+          background-color:@backgroundColor;
+          cursor: pointer;
+          width: 100px;
+          height: 30px;
+          font-size: 2rem;
+          border-radius: 5px;
+          color:@fontColorButton;
+          padding-top: 4px;
+          .centerText();
+          &:hover{
+            .swap(white,black);
+          }
       }
     }
 
