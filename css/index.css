@@ -170,41 +170,13 @@ p {
   border: 2px solid red;
 }
 .container .intro {
-  border: 2px solid purple;
-}
-.container .intro .image img {
-  border-radius: 20px;
-}
-.container .space-images {
-  border: 2px solid black;
-}
-@media (max-width: 500px) {
-  .container .space-images .sky {
-    display: none;
-  }
-}
-@media (max-width: 500px) {
-  .container .space-images .launch {
-    display: none;
-  }
+  border: 10px solid purple;
 }
 .container .visit-planets {
   border: 2px solid black;
 }
 .container .walk {
   border: 2px solid black;
-}
-.container .walk .walk-text .btn {
-  display: block;
-  background-color: black;
-  cursor: pointer;
-  width: 100px;
-  height: 30px;
-  font-size: 2rem;
-  border-radius: 10px;
-  color: white;
-  padding-top: 4px;
-  text-align: center;
 }
 .container .footer {
   border: 2px solid black;
@@ -230,8 +202,8 @@ p {
 .navigation nav a {
   font-family: 'Ubuntu', sans-serif;
   font-size: 2rem;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
   text-decoration: none;
 }
 footer {
@@ -244,6 +216,9 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .intro .image img {
+  width: 100%;
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -254,12 +229,27 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  border: 5px solid red;
+}
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .space-images img {
-  width: 28%;
-  margin: 20px 2.5%;
   border-radius: 20px;
-  height: 100%;
+  width: 33%;
 }
 .home .visit-planets {
   padding: 15px;
@@ -286,12 +276,34 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn {
+  display: block;
+  background-color: black;
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: white;
+  padding-top: 4px;
+  text-align: center;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: black;
+}
 .home .walk .walk-img {
   width: 46%;
-  margin-left: 4%;
+  /*border: red 10px dashed;
+      background-color: yellow;*/
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    height: 100%;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
-  height: auto;
   border-radius: 10px;
 }
