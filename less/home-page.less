@@ -1,11 +1,13 @@
 // Home Content
-
 .home {
 
   .intro {
     .image{
       img{
         width: 100%;
+        @media @phone{
+          border-radius: 10px;
+        }
       }
     }
 
@@ -62,11 +64,26 @@
   .walk {
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
+    @media @desktop{
+      padding: 50px 60px;
+    }
+    
     display: flex;
     justify-content: center;
+    /*background-color: orange;*/
+    @media @phone{
+      margin: 0 auto;
+    }
+    @media @phone{
+      display: flex;
+      flex-direction: column-reverse;
+    }
     .walk-text {
       width: 50%;
+      /*border: 2px solid black;*/
+      @media @phone{
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -74,6 +91,9 @@
 
       p {
         margin-bottom: 26px;
+      }
+      @media @phone{
+        border: 2px red solid;
       }
 
       .btn {
@@ -90,22 +110,38 @@
           &:hover{
             .swap(white,black);
           }
+          @media @phone{
+            display: block;            
+            background-color:@backgroundColor;
+            cursor: pointer;
+            width: 100%;
+            height: 50px;
+            padding-top: 15px;
+          }
       }
     }
 
     .walk-img {
       width: 46%;
-      /*border: red 10px dashed;
-      background-color: yellow;*/
+      margin-left: 4%;
+      /*background-color: yellow;*/
       @media @phone{
         width:100%;
-        height: 100%;
+        margin: 0 auto;
       }
       
       img {
-       width: 100%;
+        /*border: purple 2px dashed;*/
+        width: 100%;
+        height: auto;
         border-radius: 10px;
       }
+    }
+  }
+  footer{
+    @media @phone{
+      margin-top: 10px;
+      background: lightgray;
     }
   }
 }// home
