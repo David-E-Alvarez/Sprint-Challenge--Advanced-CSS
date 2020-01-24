@@ -9,6 +9,42 @@
             }//end of img witin image within intro within container
         }//endstart of image within intro within container
     }//end of intro within container
+    .space-images{//start of space-images within container
+        border: 2px solid black;
+        @media @phone{
+            .sky{
+                .hideImage();
+            }
+        }
+        @media @phone{
+            .launch{
+                .hideImage();
+            }
+        }
+    }//end of space-images within container
+    .visit-planets{//start of visit planets
+        border: 2px solid black;
+    }//end of visit planets
+    .walk{//start of walk within container
+        border: 2px solid black;
+        .walk-text{//start of walk text within walk within container
+            .btn{
+                display: block;
+                background-color: black;
+                cursor: pointer;
+                width: 100px;
+                height: 30px;
+                font-size: 2rem;
+                border-radius: 10px;
+                color:white;
+                padding-top: 4px;
+                .centerText();//THIS IS DAT  MIXIN!
+            }
+        }//end of walk text within walk
+    }//end of walk
+    .footer{
+        border: 2px solid black;
+    }
 }//end of container
 
 .navigation{
@@ -32,6 +68,7 @@
             font-size: 2rem;
             padding-left: 10px;
             padding-right: 10px;
+            text-decoration: none;
         }
     }
     

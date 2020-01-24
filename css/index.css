@@ -1,3 +1,9 @@
+.centerText {
+  text-align: center;
+}
+.hideImage {
+  display: none;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -169,6 +175,40 @@ p {
 .container .intro .image img {
   border-radius: 20px;
 }
+.container .space-images {
+  border: 2px solid black;
+}
+@media (max-width: 500px) {
+  .container .space-images .sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .container .space-images .launch {
+    display: none;
+  }
+}
+.container .visit-planets {
+  border: 2px solid black;
+}
+.container .walk {
+  border: 2px solid black;
+}
+.container .walk .walk-text .btn {
+  display: block;
+  background-color: black;
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: white;
+  padding-top: 4px;
+  text-align: center;
+}
+.container .footer {
+  border: 2px solid black;
+}
 .navigation {
   margin-top: 10px;
   width: 100%;
@@ -192,6 +232,7 @@ p {
   font-size: 2rem;
   padding-left: 10px;
   padding-right: 10px;
+  text-decoration: none;
 }
 footer {
   color: #22283B;
