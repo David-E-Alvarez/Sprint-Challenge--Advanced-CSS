@@ -3,11 +3,17 @@
     text-align: center;
 }
 
-.swap(@font, @background){
-    background-color: @font;
-    color: @background;
+.swap(@backgroundColor:black, @fontColorButton:white){
+    background-color: @fontColorButton;
+    color: @backgroundColor;
 }
 
 .hideImage{
     display: none;
+}
+
+.buttonStyle(@block: block, @backgroundColor:black, @fontColorButton:white){
+    display: @block;
+    background-color: @backgroundColor;
+    color: @fontColorButton;
 }
