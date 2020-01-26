@@ -168,9 +168,15 @@ p {
 }
 .navigation {
   display: inline-block;
-  background-color: lightgrey;
   width: 100%;
+  background-color: lightgray;
   text-align: center;
+}
+@media (min-width: 800px) {
+  .navigation {
+    margin-top: 15px;
+    margin-left: 15px;
+  }
 }
 .navigation h1 {
   text-align: center;
@@ -184,6 +190,9 @@ p {
   text-decoration: none;
   color: black;
 }
+.navigation .links {
+  padding-bottom: 10px;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -193,6 +202,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+body {
+  margin: 15px;
 }
 .home .intro {
   /*border: 2px black solid;*/
@@ -306,7 +318,8 @@ footer {
     color: white;
     padding-top: 20px;
     height: 60px;
-    width: 100%;
+    width: 90%;
+    margin-left: 15px;
   }
 }
 .home .walk .walk-img {
@@ -317,6 +330,9 @@ footer {
   .home .walk .walk-img {
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    border-top: 1px lightgray solid;
   }
 }
 .home .walk .walk-img img {
